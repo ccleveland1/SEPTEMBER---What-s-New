@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>What's New</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../styles/whats-new.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <style>
+    body {
+      padding: 0px;
+      background-color: transparent;
+    }
+  </style>
+  <script type="text/javascript">
+    function whatsNewVersionHistory_onclick(control, event) {
+      if (parent && parent.whatsNewVersionHistory_onclick)
+        parent.whatsNewVersionHistory_onclick(control, event);
+    }
+    function whatsNewExit_onclick(control, event) {
+      if (parent && parent.whatsNewExit_onclick)
+        parent.whatsNewExit_onclick(control, event);
+    }
+    function whatsNewPrint_onclick(control, event) {
+      window.print();
+    }
+  </script>
+</head>
+
+<body>
+  <div class="whats-new print">
+    <div class="outer-container">
+      <!-- <div class="main-header">
+        <i class="fas fa-bullhorn"></i>
+        <div class="title">What's New</div>
+        <div class="tools">
+          <div class="version-history"><a href="index5.2.html" class="button">Version History</a></div>
+          <div class="exit-icon">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div> -->
+      <div class="main-header no-print">
+        <i class="fas fa-bullhorn"></i>
+          <div class="title">What's New</div>
+          <div class="tools">
+            <div class="version-history"><a class="button" onclick="javascript: whatsNewVersionHistory_onclick(this, event);">Version History</a></div>
+              <div class="exit-icon" onclick="javascript: whatsNewExit_onclick(this, event);">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+          </div>
+      </div>
+      <div class="inner-wrapper">
+        <div type="" class="inner-container print">
+          <!-- <hr class="header-border"> -->
+          <div class="row-1">
+            <div class="summary">New features, enhancements and bug fixes.</div>
+            <div class="icons">
+              <div class="version">Version OAN 20-08.0.0</div>
+              <div class="action-icon no-print" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Print Version" onclick="javascript: whatsNewPrint_onclick(this, event);"><i class="fas fa-print"></i></div>
+            </div>
+          </div>
+
+          <div class="section-container">
+            <div class="section-title-1"><strong>OANet for HR</strong><span class="new-feature"><span class="new-feature-color">New Feature</span></span></div>
+            <div class="list">MIS has created a database (9950HR) and rolled out OANet for internal use by HR, including an online application and full set of documents (e-signature & information). This tool will complement HR’s use of ERP and WebRecruiter in managing corporate and field employees.</div>
+          </div>  
+
+          <div class="section-container">
+            <div class="section-title"><strong>Payrol Tab Enhancement</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">The Payroll tab has been updated with a new layout – despite the cosmetic changes, the main features available will remain the same. The primary change is to the location of the action buttons; while previously located at the bottom of the screen, the actions available to the user can now be found between the Batch and Timecard grids. With this update, the actions available to the user are more apparent for the selected batch/timecard, and more timecards can be displayed in the second grid.</div><img src="https://ain1storage.blob.core.windows.net/whatsnew/Payroll Tab Enhancement.png" width="560" height="419" style="margin-left: 25px;">
+          </div>
+
+          <div class="section-container">
+            <div class="section-title-1"><strong>Time Entry Page</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">On the Time Entry popup, users may now select different Pay Code categories. A separate dropdown icon has been added next to the Pay Code column; by clicking this icon, users can select different Pay Code categories</div><img src="https://ain1storage.blob.core.windows.net/whatsnew/Time Entry Page.png" width="560" height="462" style="margin-left: 25px;">
+          </div>
+
+          <div class="section-container">
+            <div class="section-title-1"><strong>Time Card Rounding Rule Field</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">A time card rounding rule field will now be available in the Client/Placement screen. The rounding rule selected will be applied to People Portal Clock In/Out time cards</div><img src="Timecard Rounding Rule" width="560" height="205" style="margin-left: 25px;">
+          </div>
+
+          <div class="section-container">
+            <div class="section-title"><strong>Scanned Document Audit Report</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">The Scanned Document Audit Report has been updated. When searching for who might be missing the document in question, the system will now look in all OA databases and see if any file with the matching Social Security number has the document in it. If so, the candidate will not show up on the report as “missing”</div>
+          </div>
+
+           <div class="section-container">
+            <div class="section-title"><strong>ActOne Connection Center Job Portal</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">Resumes will now be extracted from various data sources and consolidated on a specialized database for the ActOne Connection Center search portal.</div>
+        </div>
+
+         <div class="section-container">
+          <div class="section-title-1"><strong>Federal I-9 E-Signature Process</strong><span class="enhancement"><span
+                class="enhancement-color">Enhancement</span></span></div>
+          <div class="list">As a measure to facilitate remote application, the Federal I-9 form has been converted for E-Signature use. Applicants may now receive and sign the I-9 form electronically; if necessary, certain portions of the form can be sent to a designated representative for completion. In order to smoothly handle this form, the document has been divided into two parts – Page 1 (employee section) and Page 2 (Identity Document verification section).<br>For more information please visit the Release Notes.
+          </div>
+        </div>  
+
+        <div class="section-container">
+          <div class="section-title"><strong>UTC Implementation</strong><span class="bug-fix"><span class="bug-fix-color">Bug Fix</span></span></div>
+          <div class="list">The creation and modification of records within OANet will now be logged according to UTC time and converted to local time for display when viewed by a branch.</div>
+        </div>
+
+        <div class="section-container">
+          <div class="section-title"><strong>Manual and File Upload Time Card Types</strong><span class="bug-fix"><span class="bug-fix-color">Bug Fix</span></span></div>
+          <div class="list">The default time card type for Manual and File Upload time cards has been updated – these time cards are now automatically assigned TC type “AlternateTC</div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
